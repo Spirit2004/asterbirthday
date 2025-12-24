@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Happy 20th Birthday ❤️</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: "Poppins", sans-serif;
+                background: linear-gradient(180deg, #ff9a9e, #fad0c4);
+                color: #333;
+                overflow-x: hidden;
+            }
+
+            header {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+                animation: fadeIn 2s ease;
+            }
+
+            header h1 {
+                font-family: "Pacifico", cursive;
+                font-size: 2.5rem;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+                color: #fff;
+                opacity: 0.9;
+            }
+
+            .scroll-down {
+                margin-top: 2rem;
+                font-size: 0.9rem;
+                color: #fff;
+                animation: bounce 1.5s infinite;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+                color: #fff;
+            }
+
+            .albums {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+
+            .album {
+                background: #fff;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                transform: translateY(40px);
+                opacity: 0;
+                transition: all 0.8s ease;
+            }
+
+            .album.show {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .album img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+            }
+
+            .album-content {
+                padding: 1rem;
+            }
+
+            .album-content h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.4rem;
+                color: #ff6f91;
+            }
+
+            .album-content p {
+                font-size: 0.9rem;
+                color: #555;
+            }
+
+            .message {
+                background: rgba(255, 255, 255, 0.25);
+                border-radius: 20px;
+                padding: 2rem 1.5rem;
+                text-align: center;
+                color: #fff;
+                line-height: 1.7;
+                animation: fadeInUp 1.5s ease;
+            }
+
+            footer {
+                padding: 2rem 1rem;
+                text-align: center;
+                font-size: 0.9rem;
+                color: #fff;
+                opacity: 0.8;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(8px);
+                }
+            }
+
+            @media (min-width: 768px) {
+                header h1 {
+                    font-size: 3.5rem;
+                }
+                .albums {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Happy 20th Birthday, Aster Baby 💖</h1>
+            <p>To the girl who makes my world brighter every day</p>
+            <div class="scroll-down">Scroll for memories ↓</div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Our Memories 📸</h2>
+            <div class="albums">
+                <div class="album">
+                    <img
+                        src="/photo/our first unofficial date.jpg"
+                        alt="Memory 1"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>November 15th 2025</h3>
+                        <p>
+                            The beginning of us, full of smiles and butterflies.
+                        </p>
+                    </div>
+                </div>
+                <div class="album">
+                    <img
+                        src="/photo/sport date.jpg"
+                        alt="Memory 3"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>November 20th 2025</h3>
+                        <p>Our sport date !!!</p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <img
+                        src="/photo/clingy boyfriend.jpg"
+                        alt="Memory 2"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>November 23th 2025</h3>
+                        <p>Clingy boyfriend</p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <img
+                        src="/photo/our first official date.jpg"
+                        alt="Memory 3"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>November 29th 2025</h3>
+                        <p>Every moment with you feels like an adventure.</p>
+                    </div>
+                </div>
+                <div class="album">
+                    <img
+                        src="/photo/biwako date.jpg"
+                        alt="Memory 3"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>December 7th 2025</h3>
+                        <p>Thanks because of MZH</p>
+                    </div>
+                </div>
+                <div class="album">
+                    <img
+                        src="/photo/our second date.jpg"
+                        alt="Memory 3"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>December 9th 2025</h3>
+                        <p>The smile that makes everything okay.</p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <img
+                        src="/photo/shopping date.jpg"
+                        alt="Memory 3"
+                        style="width: 100%"
+                    />
+                    <div class="album-content">
+                        <h3>December 18th 2025</h3>
+                        <p>Clothes for birthday :)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="message">
+                <h2 style="margin-bottom: 1rem">A Message for You 💌</h2>
+                <p>
+                    Happy 20th birthday, my love. Thank you for being you —
+                    kind, beautiful, and amazing. I’m so grateful for every
+                    memory we’ve made and every one still to come. I promise to
+                    keep making you smile, today and always.
+                </p>
+            </div>
+        </section>
+
+        <footer>Made with ❤️ just for you</footer>
+
+        <script>
+            const albums = document.querySelectorAll(".album");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show");
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+
+            albums.forEach((album) => observer.observe(album));
+        </script>
+    </body>
+</html>
